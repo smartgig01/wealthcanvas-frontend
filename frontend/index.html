@@ -1,15 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- ── CHARACTER ENCODING ──────────────────────────────────── -->
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- ── VIEWPORT (CRITICAL FOR MOBILE) ──────────────────────── -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  
+  <!-- ── PAGE TITLE & DESCRIPTION ────────────────────────────── -->
   <title>WealthCanvas — Financial Intelligence</title>
   <meta name="description" content="Complete financial intelligence system for wealth building, debt management, and financial freedom." />
+  
+  <!-- ── THEME COLOR (Mobile Browser Bar) ────────────────────── -->
+  <meta name="theme-color" content="#000000" />
+  <meta name="msapplication-TileColor" content="#000000" />
+  
+  <!-- ── APPLE SPECIFIC ──────────────────────────────────────── -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="WealthCanvas" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  
+  <!-- ── ANDROID SPECIFIC ────────────────────────────────────── -->
+  <meta name="mobile-web-app-capable" content="yes" />
+  
+  <!-- ── SEO & SOCIAL ────────────────────────────────────────── -->
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="WealthCanvas" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="WealthCanvas — Financial Intelligence" />
+  <meta property="og:description" content="Complete financial intelligence system for wealth building, debt management, and financial freedom." />
+  <meta property="og:image" content="/og-image.png" />
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="WealthCanvas — Financial Intelligence" />
+  <meta name="twitter:description" content="Complete financial intelligence system for wealth building, debt management, and financial freedom." />
+  <meta name="twitter:image" content="/og-image.png" />
+  
+  <!-- ── FONTS ───────────────────────────────────────────────── -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- ── FAVICON ─────────────────────────────────────────────── -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  <!-- ── PRELOAD CRITICAL ASSETS ─────────────────────────────── -->
+  <link rel="preload" href="/src/styles/global.css" as="style" />
+  
+  <!-- ── CANONICAL URL (SEO) ─────────────────────────────────── -->
+  <link rel="canonical" href="https://wealthcanvas-frontend.vercel.app" />
 </head>
+
 <body>
+  <!-- ── ROOT APP CONTAINER ──────────────────────────────────── -->
   <div id="root"></div>
+  
+  <!-- ── MAIN SCRIPT ─────────────────────────────────────────── -->
   <script type="module" src="/src/main.jsx"></script>
+  
+  <!-- ── NOSCRIPT FALLBACK ──────────────────────────────────── -->
+  <noscript>
+    <div style="padding: 40px; text-align: center; font-family: sans-serif;">
+      <h1>WealthCanvas</h1>
+      <p>JavaScript is required to run this application. Please enable JavaScript in your browser settings.</p>
+    </div>
+  </noscript>
 </body>
 </html>
